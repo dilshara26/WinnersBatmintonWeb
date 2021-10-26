@@ -1,0 +1,294 @@
+body{
+    margin: 0;
+}
+.navbar-fixed-top.scrolled {
+    background-color: rgb(114, 57, 57) !important;
+    transition: background-color 200ms linear;
+  }
+  nav{
+    background-color: rgba(38, 35, 199, 0.897);
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;  
+  }
+  
+  .brandimg-nav img{
+    height: 80%;
+  }
+  .bar-item{
+    font-family: 'Asap', sans-serif !important; 
+  }
+  label.logo{
+    color: rgb(141, 51, 51);
+    font-size: 35px;
+    padding: 10px 100px;
+    font-weight: bold;
+  }
+  nav ul{
+    float: right;
+    margin-right: 100px;
+  }
+  
+  nav ul li{
+    display: inline-block;
+    margin: 30px 10px;
+    font-size: 22px;
+    
+  }
+  @media only screen and (max-width:650px) {
+    nav{
+      background-color: rgb(114, 57, 57) !important;
+      height: 80px;
+      width: 100%;
+      position: fixed;
+      z-index: 1000;
+   
+  }
+  }
+  nav ul li a{
+    color: white;
+    text-decoration: none;
+    padding: 7px 13px;
+    background: rgba(45, 70, 185,.2);
+    
+    border-radius: 10px;
+  }
+  #header a.active1,.nav-hover:hover{
+    background:rgba(83, 110, 233, 0.644);
+    transition: .5s;
+    border-radius: 15px;
+    color: white;
+  
+  
+  }
+  
+   .checkbutton{
+    float: right;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+    z-index: 100;
+    
+  
+  }
+  #check{
+    display: none;
+  }
+  @media only screen and (max-width: 1090px){
+   label.logo{
+     font-size: 30px;
+     padding-left: 50px;
+  
+   }
+   nav ul li a{
+     font-size: 16px;
+  
+   }
+  
+  }
+  @media only screen and (max-width:1090px) {
+    .checkbutton{
+      display: block;
+    }
+    ul{
+      position: fixed;
+      height: 100vh;
+      width: 100%;
+      background: rgb(78, 23, 230);
+      top: 0px;
+      left: -100%;
+      text-align: center;
+      
+      transition: all .5s;
+      
+    } 
+  nav ul li{
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+      margin-left: 230px;
+  
+    }
+  nav ul li a{
+   font-size: 20px;
+  }
+   a:hover,a.active1{
+     background: none;
+     color: rgb(179, 212, 228)!important ;
+   } 
+   #check:checked ~ ul{
+     left: -60%;
+   }
+  } 
+  @media only screen and (min-width:869px) {
+    .brandimg{
+      width: 8%;
+      margin: 5px 70px;
+    
+    }
+    
+  }
+  @media only screen and (max-width:868px) {
+    .brandimg{
+      width: 20%;
+      margin: 5px 70px;
+    
+    }
+    
+  }
+
+.error-meessage-container{
+    max-width: 1300px;
+    font-family: 'Nanum Myeongjo', serif;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    margin: auto;
+}
+
+.col-left{
+    align-items: center;
+    text-align: left;
+    width: 50%;
+    padding-right: 50px;
+    font-family: 'Roboto Slab', serif;
+}
+
+.main-title{
+    width: auto;
+}
+
+.main-title h1{
+    letter-spacing: 2.5px;
+    font-size: 12rem;
+    font-weight: 1000;
+    left: 20;
+    color: 	#484848;
+    margin-top: 0;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.error{
+    font-size: 2.5rem;
+    color: #484848;
+    font-weight: 600;
+    margin: 30px auto;
+}
+
+.text{
+    color: darkgray
+}
+
+.text h4{
+    font-size: 1.5rem;
+}
+
+.text a{
+    text-decoration: underline;
+    color: crimson;
+    transition: .2s ease;
+}
+
+.text a:hover{
+    color: darkgray;
+}
+
+.col-right{
+    width: 50%;
+    align-items: center;
+    text-align: -webkit-center;
+}
+
+.col-image{
+    height: 500px;
+    width: 500px;
+
+}
+
+.col-image img{
+    height: 100%;
+    width: 100%;
+    margin-top: 20px;
+}
+
+@media only screen and (max-width: 1400px){
+    .col-left{
+        padding-left: 50px;
+    }
+}
+
+@media only screen and (max-width: 1000px){
+    .error-meessage-container{
+        display: flex;
+        flex-direction: column-reverse;
+        height: auto;
+    }
+
+    .col-left{
+        padding: 0;
+        max-width: 500px;
+        width: 60%;
+    }
+
+    .col-right{
+        width: 60%;
+    }
+
+    .col-image{
+        width: 100%;
+        height: 100%;
+    }
+
+
+    .main-title h1{
+        margin: 50px 0 0;
+        font-size: 5rem;
+        margin-left: 15%;
+    }
+
+    .error{
+        font-size: 2rem;
+    }
+
+    .text h2{
+        font-size: 1.5rem;
+    }
+
+    .text h4{
+        font-size: 1rem;
+    }
+
+    .text a{
+        text-decoration: underline;
+    }
+}
+
+@media only screen and (max-width: 460px) {
+    .main-title h1{
+        font-size: 4rem;
+    }   
+
+     .col-right{
+        width: 100px;
+        height: 100px;
+    }
+
+    .col-right{
+        width: 80%;
+    }
+    
+    .error{
+        font-size: 1.5rem !important;
+    }
+
+    .text h2{
+        font-size: 1rem;
+    }
+
+    .text h4{
+        font-size: 0.8rem;
+    }
+}

@@ -1,2 +1,2 @@
-# WinnersBatmintonWeb
-This is a draft of an Website we created to a national level badminton coach. 
+# Winners-Badminton-Academy
+Code I created for Winners Badminton Academy
